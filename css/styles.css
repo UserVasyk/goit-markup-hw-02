@@ -1,3 +1,191 @@
-body{
-    background-color: navy;
+@@ -13,18 +13,24 @@
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--brand-color-1);
+  font-family: Roboto sans-serif;
+  color: var(--paragraph-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.75;
+  letter-spacing: 0.03em;
+}
+/* header */
+.logo {
+  color: var(--brand-color-1);
+  color: var(--brand-color-2);
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-black {
+  color: #000000;
+}
+.header-link-logo-text,
+.footer-link-logo-text {
+  color: var(--brand-color-2);
+@ -33,21 +39,25 @@ body {
+.list {
+  list-style: none;
+}
+.header-list-link,
+.header-list-link-info {
+  color: var(--brand-color-1);
+  text-decoration: none;
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+.header-list-link:hover,
+.header-list-link:focus,
+.header-list-link-info:hover,
+.header-list-link-info:focus {
+.header-info-link:hover,
+.header-info-link:focus {
+  color: var(--brand-color-2);
+}
+.header-list-nav .header-list-link.current {
+.header-list-nav {
+  color: var(--brand-color-1);
+}
+.header-list-link.current {
+  color: var(--brand-color-2);
+}
+/* hero */
+@ -59,6 +69,7 @@ body {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.hero-button {
+  color: var(--primary-bg-color);
+@ -73,73 +84,54 @@ body {
+  background-color: #188ce8;
+}
+/* feature */
+.feature-paragraph,
+.team-paragraph,
+.paragraph {
+  color: var(--paragraph-color);
+}
+.feature-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.feature-paragraph {
+  font-size: 14px;
+  line-height: 1.71;
+  text-transform: uppercase;
+  color: var(--brand-color-1);
+}
+
+/* about-us */
+.about-us-title {
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--brand-color-1);
+}
+/* our team */
+.team {
+  background-color: var(--tertiary-bg-color);
+}
+.our-team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+.our-team-names {
+.team-names {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--brand-color-1);
+}
+.team-paragraph {
+.team-paragraph,
+.portfolio-paragraph {
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--paragraph-color);
+}
+/* footer */
+.footer {
+  background-color: var(--secondary-bg-color);
+}
+.footer-link-logo {
+.logo-white {
+  color: var(--primary-bg-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.footer-list-link-map {
+.footer-link-map {
+  color: var(--primary-bg-color);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-list-link-info {
+.footer-link-info {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-list-link-info:hover,
+.footer-list-link-info:focus {
+.footer-link-info:hover,
+.footer-link-info:focus {
+  color: var(--primary-bg-color);
+}
+/* Для кнопок у портфоліо */
+.main-button {
+.filter-button {
+  color: var(--brand-color-1);
+  background-color: var(--tertiary-bg-color);
+  border: none;
+@ -147,8 +139,8 @@ body {
+  font-size: 16px;
+  line-height: 1.62;
+}
+.main-button:hover,
+.main-button:focus {
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--brand-color-2);
+}
+@ -156,7 +148,7 @@ body {
+.portfolio-link {
+  text-decoration: none;
+}
+.portfolio-link-title {
+.portfolio-title {
+  color: var(--brand-color-1);
+  font-weight: 700;
+  font-size: 18px;
+@ -164,8 +156,5 @@ body {
+}
+.btn {
+  cursor: pointer;
+}
+a .paragraph {
+  font-size: 16px;
+  line-height: 1.87;
+  font-family: inherit;
 }
